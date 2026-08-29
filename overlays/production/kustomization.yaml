@@ -16,10 +16,10 @@ patches:
 images:
 - name: PROJECT/BROADCASTER
   newName: ghcr.io/rororo06/broadcaster
-  newTag: "5.5"
+  newTag: "5.6"
 - name: PROJECT/TODO_APP
   newName: ghcr.io/rororo06/todo-app
-  newTag: "5.5"
+  newTag: "5.6"
 - name: PROJECT/TODO_BACKEND
   newName: ghcr.io/rororo06/todo-backend
-  newTag: "5.5"
+  newTag: "5.6"
