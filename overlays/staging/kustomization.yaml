@@ -14,10 +14,10 @@ patches:
 images:
 - name: PROJECT/BROADCASTER
   newName: ghcr.io/rororo06/broadcaster
-  newTag: 1992d56f0ff5bd9a929237ea77bc6b1eec928aa7
+  newTag: cda928906788ee480c63631b0f2d3b82c6fb6f5f
 - name: PROJECT/TODO_APP
   newName: ghcr.io/rororo06/todo-app
-  newTag: 1992d56f0ff5bd9a929237ea77bc6b1eec928aa7
+  newTag: cda928906788ee480c63631b0f2d3b82c6fb6f5f
 - name: PROJECT/TODO_BACKEND
   newName: ghcr.io/rororo06/todo-backend
-  newTag: 1992d56f0ff5bd9a929237ea77bc6b1eec928aa7
+  newTag: cda928906788ee480c63631b0f2d3b82c6fb6f5f
