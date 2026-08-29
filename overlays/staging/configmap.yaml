@@ -4,4 +4,4 @@ metadata:
   name: project-configmap
 data:
   NATS_SUBJECT: todos-staging
-  NATS_QUEUE_GROUP: broadcasters-staging-v2
+  NATS_QUEUE_GROUP: broadcasters-staging
