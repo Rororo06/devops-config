@@ -4,22 +4,22 @@ kind: Kustomization
 namespace: project-production
 
 resources:
-  - namespace.yaml
-  - ./../../base
-  - backup-cronjob.yaml
+- namespace.yaml
+- ./../../base
+- backup-cronjob.yaml
 
 patches:
-  - path: configmap.yaml
-  - path: ingress.yaml
-  - path: broadcaster.yaml
+- path: configmap.yaml
+- path: ingress.yaml
+- path: broadcaster.yaml
 
 images:
-  - name: PROJECT/TODO_APP
-    newName: todo-app
-    newTag: "1.7"
-  - name: PROJECT/TODO_BACKEND
-    newName: todo-backend
-    newTag: "1.6"
-  - name: PROJECT/BROADCASTER
-    newName: broadcaster
-    newTag: "1.0"
+- name: PROJECT/BROADCASTER
+  newName: ghcr.io/rororo06/broadcaster
+  newTag: v1.0.0
+- name: PROJECT/TODO_APP
+  newName: ghcr.io/rororo06/todo-app
+  newTag: v1.0.0
+- name: PROJECT/TODO_BACKEND
+  newName: ghcr.io/rororo06/todo-backend
+  newTag: v1.0.0
