@@ -4,20 +4,20 @@ kind: Kustomization
 namespace: project-staging
 
 resources:
-  - namespace.yaml
-  - ./../../base
+- namespace.yaml
+- ./../../base
 
 patches:
-  - path: configmap.yaml
-  - path: ingress.yaml
+- path: configmap.yaml
+- path: ingress.yaml
 
 images:
-  - name: PROJECT/TODO_APP
-    newName: todo-app
-    newTag: "1.7"
-  - name: PROJECT/TODO_BACKEND
-    newName: todo-backend
-    newTag: "1.6"
-  - name: PROJECT/BROADCASTER
-    newName: broadcaster
-    newTag: "1.0"
+- name: PROJECT/BROADCASTER
+  newName: ghcr.io/rororo06/broadcaster
+  newTag: 9ae9ece91bf51d47126b96a82c21ee8384b213c6
+- name: PROJECT/TODO_APP
+  newName: ghcr.io/rororo06/todo-app
+  newTag: 9ae9ece91bf51d47126b96a82c21ee8384b213c6
+- name: PROJECT/TODO_BACKEND
+  newName: ghcr.io/rororo06/todo-backend
+  newTag: 9ae9ece91bf51d47126b96a82c21ee8384b213c6
